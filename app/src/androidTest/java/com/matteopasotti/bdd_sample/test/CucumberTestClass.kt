@@ -4,6 +4,6 @@ import cucumber.api.CucumberOptions
 
 
 @CucumberOptions(features = ["features"],
-    glue = ["com.matteopasotti.bdd_sample.steps"],
-    tags = ["transfer"])
+    glue = ["com.matteopasotti.bdd_sample.steps"])
+@Suppress("unused")
 class CucumberTestClass

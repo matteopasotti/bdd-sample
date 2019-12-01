@@ -31,12 +31,12 @@ class TransferSteps {
         robot.launchTransferScreen(activityRule)
     }
 
-    @And("My current account is {double}")
+    @And("My Current Account is {double}")
     fun init_my_current_account(amount: Double) {
         robot.initAmountCurrentAccount(amount)
     }
 
-    @And("My savings are {double}")
+    @And("My Savings are {double}")
     fun init_my_savings(amount: Double) {
         robot.initAmountSavings(amount)
     }
@@ -46,7 +46,7 @@ class TransferSteps {
         robot.selectAmountToTransferField()
     }
 
-    @And("I enter an amount to transfer {double}")
+    @And("I enter an amount smaller than my current account {double}")
     fun i_enter_an_amount_to_transfer(amount: Double) {
         robot.insertAmountToTransfer(amount)
     }

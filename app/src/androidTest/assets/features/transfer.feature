@@ -1,11 +1,10 @@
 Feature: Transfer an amount of money from your Current Account to your Savings
 
-  @transfer
   Scenario Outline: Successful Transfer
     Given I start the application
     And My Current Account is <current_account>
     And My Savings are <savings_account>
-    When I click amount_to_transfer field
+    When I click amount to transfer field
     And I enter an amount smaller than my current account <amount_to_transfer>
     And I close the keyboard
     And I click Transfer button
